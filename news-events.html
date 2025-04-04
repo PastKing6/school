@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Events | Academia Linguarum Internationalis</title>
+    <meta name="description" content="Stay updated with the latest news, events, and announcements from Academia Linguarum Internationalis. Discover what's happening in our vibrant school community.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/ali-logo.png" alt="ALI Logo" class="h-16 mr-3" onerror="this.src='https://via.placeholder.com/150x60?text=ALI';this.onerror='';">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900">Academia Linguarum Internationalis</h1>
+                    <p class="text-sm text-gray-600">Excellence in International Education</p>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-blue-900 text-2xl"></i>
+            </button>
+            
+            <!-- Navigation - Desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-blue-900 font-medium hover:text-blue-700">Home</a></li>
+                    <li><a href="about.html" class="text-blue-900 font-medium hover:text-blue-700">About Us</a></li>
+                    <li><a href="academics.html" class="text-blue-900 font-medium hover:text-blue-700">Academics</a></li>
+                    <li><a href="admissions.html" class="text-blue-900 font-medium hover:text-blue-700">Admissions</a></li>
+                    <li><a href="student-life.html" class="text-blue-900 font-medium hover:text-blue-700">Student Life</a></li>
+                    <li><a href="contact.html" class="text-blue-900 font-medium hover:text-blue-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="hidden bg-blue-50 md:hidden" id="mobile-menu">
+            <ul class="container mx-auto px-4 py-3 space-y-3">
+                <li><a href="index.html" class="block text-blue-900 font-medium">Home</a></li>
+                <li><a href="about.html" class="block text-blue-900 font-medium">About Us</a></li>
+                <li><a href="academics.html" class="block text-blue-900 font-medium">Academics</a></li>
+                <li><a href="admissions.html" class="block text-blue-900 font-medium">Admissions</a></li>
+                <li><a href="student-life.html" class="block text-blue-900 font-medium">Student Life</a></li>
+                <li><a href="contact.html" class="block text-blue-900 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-20">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">News & Events</h2>
+            <p class="text-xl max-w-3xl">Stay connected with the latest happenings, achievements, and upcoming events at ALI.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <span class="mx-2"><i class="fas fa-chevron-right text-xs"></i></span>
+                <span class="text-gray-800">News & Events</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured News -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Featured News</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/800x400?text=Featured+News" alt="Featured News" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-medium">May 15, 2023</span>
+                        <h4 class="text-2xl font-bold mb-3 mt-1 text-blue-900">Annual Science Fair Showcases Student Innovation</h4>
+                        <p class="text-gray-700 mb-4">Our students demonstrated exceptional creativity and scientific understanding at this year's Science Fair, presenting projects ranging from renewable energy solutions to artificial intelligence applications.</p>
+                        <a href="#" class="text-blue-700 font-medium hover:underline">Read full story →</a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/800x400?text=Featured+News" alt="Featured News" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-medium">May 10, 2023</span>
+                        <h4 class="text-2xl font-bold mb-3 mt-1 text-blue-900">ALI Students Win International Debate Championship</h4>
+                        <p class="text-gray-700 mb-4">Our debate team emerged victorious at the International Schools Debate Championship, demonstrating outstanding critical thinking and public speaking skills.</p>
+                        <a href="#" class="text-blue-700 font-medium hover:underline">Read full story →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Latest News</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- News Item 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=News" alt="News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-medium">May 5, 2023</span>
+                        <h4 class="text-xl font-bold mb-3 mt-1 text-blue-900">New Language Lab Opening</h4>
+                        <p class="text-gray-700 mb-4">State-of-the-art language laboratory equipped with advanced learning technologies inaugurated.</p>
+                        <a href="#" class="text-blue-700 font-medium hover:underline">Read more →</a>
+                    </div>
+                </div>
+
+                <!-- News Item 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=News" alt="News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-medium">May 3, 2023</span>
+                        <h4 class="text-xl font-bold mb-3 mt-1 text-blue-900">Sports Team Achievement</h4>
+                        <p class="text-gray-700 mb-4">Our basketball team secured first place in the regional inter-school championship.</p>
+                        <a href="#" class="text-blue-700 font-medium hover:underline">Read more →</a>
+                    </div>
+                </div>
+
+                <!-- News Item 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/600x400?text=News" alt="News" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-600 font-medium">May 1, 2023</span>
+                        <h4 class="text-xl font-bold mb-3 mt-1 text-blue-900">Community Service Initiative</h4>
+                        <p class="text-gray-700 mb-4">Students launch environmental awareness campaign in local community.</p>
+                        <a href="#" class="text-blue-700 font-medium hover:underline">Read more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Upcoming Events</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Event 1 -->
+                <div class="flex bg-blue-50 rounded-lg overflow-hidden">
+                    <div class="w-32 bg-blue-900 text-white flex flex-col items-center justify-center p-4">
+                        <span class="text-3xl font-bold">20</span>
+                        <span class="text-sm uppercase">May</span>
+                        <span class="text-sm">2023</span>
+                    </div>
+                    <div class="flex-1 p-6">
+                        <h4 class="text-xl font-bold mb-2 text-blue-900">International Cultural Festival</h4>
+                        <p class="text-gray-700 mb-2">A celebration of our diverse community featuring performances, food, and cultural exhibitions.</p>
+                        <div class="flex items-center text-gray-600">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>10:00 AM - 4:00 PM</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>School Campus</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="flex bg-blue-50 rounded-lg overflow-hidden">
+                    <div class="w-32 bg-blue-900 text-white flex flex-col items-center justify-center p-4">
+                        <span class="text-3xl font-bold">25</span>
+                        <span class="text-sm uppercase">May</span>
+                        <span class="text-sm">2023</span>
+                    </div>
+                    <div class="flex-1 p-6">
+                        <h4 class="text-xl font-bold mb-2 text-blue-900">Parent-Teacher Conference</h4>
+                        <p class="text-gray-700 mb-2">Spring semester parent-teacher meetings to discuss student progress and development.</p>
+                        <div class="flex items-center text-gray-600">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>2:00 PM - 7:00 PM</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>Main Building</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="flex bg-blue-50 rounded-lg overflow-hidden">
+                    <div class="w-32 bg-blue-900 text-white flex flex-col items-center justify-center p-4">
+                        <span class="text-3xl font-bold">1</span>
+                        <span class="text-sm uppercase">June</span>
+                        <span class="text-sm">2023</span>
+                    </div>
+                    <div class="flex-1 p-6">
+                        <h4 class="text-xl font-bold mb-2 text-blue-900">Spring Music Concert</h4>
+                        <p class="text-gray-700 mb-2">Annual spring concert featuring performances by our talented music students.</p>
+                        <div class="flex items-center text-gray-600">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>6:00 PM - 8:00 PM</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>Auditorium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="flex bg-blue-50 rounded-lg overflow-hidden">
+                    <div class="w-32 bg-blue-900 text-white flex flex-col items-center justify-center p-4">
+                        <span class="text-3xl font-bold">5</span>
+                        <span class="text-sm uppercase">June</span>
+                        <span class="text-sm">2023</span>
+                    </div>
+                    <div class="flex-1 p-6">
+                        <h4 class="text-xl font-bold mb-2 text-blue-900">Career Day</h4>
+                        <p class="text-gray-700 mb-2">Professional speakers and alumni share career insights with high school students.</p>
+                        <div class="flex items-center text-gray-600">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>9:00 AM - 3:00 PM</span>
+                            <i class="fas fa-map-marker-alt ml-4 mr-2"></i>
+                            <span>Conference Center</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Stay Updated</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Subscribe to our newsletter to receive the latest news and event updates from ALI.</p>
+            <form class="max-w-2xl mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="flex-1 px-6 py-3 rounded-full text-gray-900">
+                    <button type="submit" class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-8 rounded-full">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> ul. Harmonijna 1, 00-000 Warszawa</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-2"></i> +48 42 667 0825</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> server@ali.edu.pl</p>
+                        <p><i class="fas fa-globe mr-2"></i> www.ali.edu.pl</p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-300">About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-blue-300">Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-blue-300">Admissions</a></li>
+                        <li><a href="calendar.html" class="hover:text-blue-300">School Calendar</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">For Parents</h3>
+                    <ul class="space-y-2">
+                        <li><a href="parent-portal.html" class="hover:text-blue-300">Parent Portal</a></li>
+                        <li><a href="resources.html" class="hover:text-blue-300">Resources</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-300">FAQ</a></li>
+                        <li><a href="handbook.html" class="hover:text-blue-300">Student Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <form>
+                        <label class="block mb-2">Subscribe to our newsletter:</label>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-900">
+                            <button type="submit" class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Academia Linguarum Internationalis. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a> | 
+                    <a href="sitemap.html" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

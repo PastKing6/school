@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Academia Linguarum Internationalis</title>
+    <meta name="description" content="Learn about Academia Linguarum Internationalis (ALI), our history, mission, values, and the dedicated team behind our educational excellence.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/ali-logo.png" alt="ALI Logo" class="h-16 mr-3" onerror="this.src='https://via.placeholder.com/150x60?text=ALI';this.onerror='';">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900">Academia Linguarum Internationalis</h1>
+                    <p class="text-sm text-gray-600">Excellence in International Education</p>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-blue-900 text-2xl"></i>
+            </button>
+            
+            <!-- Navigation - Desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-blue-900 font-medium hover:text-blue-700">Home</a></li>
+                    <li><a href="about.html" class="text-blue-900 font-medium hover:text-blue-700 border-b-2 border-blue-700">About Us</a></li>
+                    <li><a href="academics.html" class="text-blue-900 font-medium hover:text-blue-700">Academics</a></li>
+                    <li><a href="admissions.html" class="text-blue-900 font-medium hover:text-blue-700">Admissions</a></li>
+                    <li><a href="student-life.html" class="text-blue-900 font-medium hover:text-blue-700">Student Life</a></li>
+                    <li><a href="contact.html" class="text-blue-900 font-medium hover:text-blue-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="hidden bg-blue-50 md:hidden" id="mobile-menu">
+            <ul class="container mx-auto px-4 py-3 space-y-3">
+                <li><a href="index.html" class="block text-blue-900 font-medium">Home</a></li>
+                <li><a href="about.html" class="block text-blue-900 font-medium">About Us</a></li>
+                <li><a href="academics.html" class="block text-blue-900 font-medium">Academics</a></li>
+                <li><a href="admissions.html" class="block text-blue-900 font-medium">Admissions</a></li>
+                <li><a href="student-life.html" class="block text-blue-900 font-medium">Student Life</a></li>
+                <li><a href="contact.html" class="block text-blue-900 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-20">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">About Us</h2>
+            <p class="text-xl max-w-3xl">Discover the story, mission, and people behind Academia Linguarum Internationalis.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <span class="mx-2"><i class="fas fa-chevron-right text-xs"></i></span>
+                <span class="text-gray-800">About Us</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-blue-900">Our Story</h2>
+                    <p class="text-gray-700 mb-4">Founded in 1995, Academia Linguarum Internationalis began with a vision to create an educational institution that combines academic excellence with global perspective. Our founders, a group of educators and diplomats, recognized the need for an educational approach that prepares students for an increasingly interconnected world.</p>
+                    <p class="text-gray-700 mb-4">Starting with just 45 students in a small building in central Warsaw, ALI has grown to become one of Poland's most respected international schools, now serving over 800 students from more than 40 countries.</p>
+                    <p class="text-gray-700">Throughout our history, we have maintained a commitment to innovative teaching methods, cultural understanding, and personalized education that honors each student's unique potential.</p>
+                </div>
+                <div class="order-first md:order-last">
+                    <img src="https://www.hmdb.org/Photos5/554/Photo554479.jpg" alt="ALI School History" class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-blue-900">Our Mission & Vision</h2>
+                <p class="text-gray-700">Guiding principles that shape everything we do at Academia Linguarum Internationalis.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Our Mission</h3>
+                    <p class="text-gray-700">To provide an exceptional education that balances academic rigor with personal development, preparing students to be lifelong learners, critical thinkers, and responsible global citizens who contribute meaningfully to society.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-900">Our Vision</h3>
+                    <p class="text-gray-700">To be recognized globally as a center of educational excellence that nurtures culturally-aware, intellectually curious, and ethically responsible individuals who are empowered to shape a better world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Core Values</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 border-t-4 border-blue-700 bg-blue-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Excellence</h3>
+                    <p class="text-gray-700">We pursue excellence in all aspects of education, maintaining high standards and encouraging each member of our community to achieve their personal best.</p>
+                </div>
+                
+                <div class="p-6 border-t-4 border-blue-700 bg-blue-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Integrity</h3>
+                    <p class="text-gray-700">We act with honesty, transparency, and ethical behavior in all interactions, fostering mutual respect and trust within our community.</p>
+                </div>
+                
+                <div class="p-6 border-t-4 border-blue-700 bg-blue-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Diversity</h3>
+                    <p class="text-gray-700">We celebrate cultural diversity and different perspectives, creating an inclusive environment where all members feel valued and respected.</p>
+                </div>
+                
+                <div class="p-6 border-t-4 border-blue-700 bg-blue-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Innovation</h3>
+                    <p class="text-gray-700">We embrace creative thinking and adapt to evolving educational approaches, preparing students for the challenges of a rapidly changing world.</p>
+                </div>
+                
+                <div class="p-6 border-t-4 border-blue-700 bg-blue-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Collaboration</h3>
+                    <p class="text-gray-700">We foster cooperative relationships among students, teachers, parents, and the wider community, recognizing that education is a shared responsibility.</p>
+                </div>
+                
+                <div class="p-6 border-t-4 border-blue-700 bg-blue-50 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Responsibility</h3>
+                    <p class="text-gray-700">We encourage social responsibility, environmental stewardship, and active citizenship, inspiring our students to make a positive difference in the world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Leadership Team</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://getradi.ku.dk/images/Picture1.jpg" alt="Dr. Aleksander Nowak" class="w-full h-64 object-cover object-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1 text-blue-900">Dr. Aleksander Nowak</h3>
+                        <p class="text-blue-700 font-medium mb-3">Principal</p>
+                        <p class="text-gray-700 mb-4">Dr. Nowak brings over 25 years of educational leadership experience across Europe and North America. He holds a Ph.D. in Educational Leadership from Harvard University.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://getradi.ku.dk/images/Picture1.jpg" alt="Dr. Maria Kowalczyk" class="w-full h-64 object-cover object-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1 text-blue-900">Dr. Maria Kowalczyk</h3>
+                        <p class="text-blue-700 font-medium mb-3">Academic Director</p>
+                        <p class="text-gray-700 mb-4">With expertise in curriculum development and innovative teaching methodologies, Dr. Kowalczyk leads our academic programs with distinction and vision.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHTchaar1xpqF3i6LnphMI8VNgw_hbx1As2A&s" alt="Thomas Berger" class="w-full h-64 object-cover object-center">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-1 text-blue-900">Thomas Berger</h3>
+                        <p class="text-blue-700 font-medium mb-3">Director of International Programs</p>
+                        <p class="text-gray-700 mb-4">Mr. Berger coordinates our extensive international partnerships and exchange programs, bringing global perspectives into our classrooms.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="faculty.html" class="inline-block bg-blue-900 text-white hover:bg-blue-800 font-bold py-3 px-6 rounded-full">Meet Our Full Faculty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accreditations Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Accreditations</h2>
+            
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/International_Baccalaureate_Logo.svg/1200px-International_Baccalaureate_Logo.svg.png" alt="International Baccalaureate" class="h-20">
+                <img src="https://www.nordangliaeducation.com/bisc-lincoln-park/-/media/bisc-lincoln-park/cis.png?rev=eda5c3c9aa8a4a15af76215ab8af04b5&hash=5330E1A6282D8A063713AC724EBDF3BA" alt="Council of International Schools" class="h-20">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2fn-sHQ3bIMhh6dv0fYMKU9TsMFGH5cg3BA&s" alt="New England Association of Schools and Colleges" class="h-20">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9vOtLKyo6R-wIp4MBdgcnYOj1P7-bFi0VmA&s" alt="European Council of International Schools" class="h-20">
+            </div>
+            
+            <p class="text-center text-gray-700 mt-10 max-w-3xl mx-auto">
+                Our accreditations reflect our commitment to maintaining the highest standards of educational excellence and continuous improvement.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Experience ALI Firsthand</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">We invite you to visit our campus, meet our dedicated faculty, and see how we're shaping the global citizens of tomorrow.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="admissions.html" class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-8 rounded-full">Apply Now</a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-3 px-8 rounded-full">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> ul. Harmonijna 1, 00-000 Warszawa</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-2"></i> +48 42 667 0825</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> server@ali.edu.pl</p>
+                        <p><i class="fas fa-globe mr-2"></i> www.ali.edu.pl</p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-300">About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-blue-300">Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-blue-300">Admissions</a></li>
+                        <li><a href="calendar.html" class="hover:text-blue-300">School Calendar</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">For Parents</h3>
+                    <ul class="space-y-2">
+                        <li><a href="parent-portal.html" class="hover:text-blue-300">Parent Portal</a></li>
+                        <li><a href="resources.html" class="hover:text-blue-300">Resources</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-300">FAQ</a></li>
+                        <li><a href="handbook.html" class="hover:text-blue-300">Student Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <form>
+                        <label class="block mb-2">Subscribe to our newsletter:</label>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-900">
+                            <button type="submit" class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Academia Linguarum Internationalis. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a> | 
+                    <a href="sitemap.html" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 

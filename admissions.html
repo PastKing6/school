@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Academia Linguarum Internationalis</title>
+    <meta name="description" content="Learn about the admissions process, requirements, and tuition at Academia Linguarum Internationalis. Start your journey with us today.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/ali-logo.png" alt="ALI Logo" class="h-16 mr-3" onerror="this.src='https://via.placeholder.com/150x60?text=ALI';this.onerror='';">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900">Academia Linguarum Internationalis</h1>
+                    <p class="text-sm text-gray-600">Excellence in International Education</p>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-blue-900 text-2xl"></i>
+            </button>
+            
+            <!-- Navigation - Desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-blue-900 font-medium hover:text-blue-700">Home</a></li>
+                    <li><a href="about.html" class="text-blue-900 font-medium hover:text-blue-700">About Us</a></li>
+                    <li><a href="academics.html" class="text-blue-900 font-medium hover:text-blue-700">Academics</a></li>
+                    <li><a href="admissions.html" class="text-blue-900 font-medium hover:text-blue-700 border-b-2 border-blue-700">Admissions</a></li>
+                    <li><a href="student-life.html" class="text-blue-900 font-medium hover:text-blue-700">Student Life</a></li>
+                    <li><a href="contact.html" class="text-blue-900 font-medium hover:text-blue-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="hidden bg-blue-50 md:hidden" id="mobile-menu">
+            <ul class="container mx-auto px-4 py-3 space-y-3">
+                <li><a href="index.html" class="block text-blue-900 font-medium">Home</a></li>
+                <li><a href="about.html" class="block text-blue-900 font-medium">About Us</a></li>
+                <li><a href="academics.html" class="block text-blue-900 font-medium">Academics</a></li>
+                <li><a href="admissions.html" class="block text-blue-900 font-medium">Admissions</a></li>
+                <li><a href="student-life.html" class="block text-blue-900 font-medium">Student Life</a></li>
+                <li><a href="contact.html" class="block text-blue-900 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-20">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Admissions</h2>
+            <p class="text-xl max-w-3xl">Join our diverse community of learners and begin your journey towards academic excellence and global citizenship.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <span class="mx-2"><i class="fas fa-chevron-right text-xs"></i></span>
+                <span class="text-gray-800">Admissions</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links Section -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <a href="#admission-process" class="p-6 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-300">
+                    <div class="text-blue-900 text-3xl mb-3">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900">Admission Process</h3>
+                    <p class="text-gray-700 mt-2">Learn about our step-by-step application process</p>
+                </a>
+
+                <a href="#requirements" class="p-6 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-300">
+                    <div class="text-blue-900 text-3xl mb-3">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900">Requirements</h3>
+                    <p class="text-gray-700 mt-2">View admission requirements and documentation</p>
+                </a>
+
+                <a href="#tuition" class="p-6 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-300">
+                    <div class="text-blue-900 text-3xl mb-3">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900">Tuition & Fees</h3>
+                    <p class="text-gray-700 mt-2">Information about tuition, fees, and financial aid</p>
+                </a>
+
+                <a href="#apply" class="p-6 bg-blue-50 rounded-lg hover:bg-blue-100 transition duration-300">
+                    <div class="text-blue-900 text-3xl mb-3">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-blue-900">Apply Now</h3>
+                    <p class="text-gray-700 mt-2">Start your application process today</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process Section -->
+    <section id="admission-process" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Admission Process</h3>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="relative pl-8 border-l-4 border-blue-900">
+                        <span class="absolute left-0 top-0 w-8 h-8 -ml-6 bg-blue-900 text-white rounded-full flex items-center justify-center">1</span>
+                        <h4 class="text-xl font-bold mb-3 text-blue-900">Submit Application</h4>
+                        <p class="text-gray-700">Complete the online application form and submit required documents, including previous academic records and recommendations.</p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-4 border-blue-900">
+                        <span class="absolute left-0 top-0 w-8 h-8 -ml-6 bg-blue-900 text-white rounded-full flex items-center justify-center">2</span>
+                        <h4 class="text-xl font-bold mb-3 text-blue-900">Assessment</h4>
+                        <p class="text-gray-700">Students complete entrance assessments in English and Mathematics. International students may be required to take an English proficiency test.</p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-4 border-blue-900">
+                        <span class="absolute left-0 top-0 w-8 h-8 -ml-6 bg-blue-900 text-white rounded-full flex items-center justify-center">3</span>
+                        <h4 class="text-xl font-bold mb-3 text-blue-900">Interview</h4>
+                        <p class="text-gray-700">Prospective students and parents meet with our admissions team for an interview to discuss educational goals and expectations.</p>
+                    </div>
+
+                    <div class="relative pl-8 border-l-4 border-blue-900">
+                        <span class="absolute left-0 top-0 w-8 h-8 -ml-6 bg-blue-900 text-white rounded-full flex items-center justify-center">4</span>
+                        <h4 class="text-xl font-bold mb-3 text-blue-900">Decision & Enrollment</h4>
+                        <p class="text-gray-700">Admission decisions are communicated within two weeks. Upon acceptance, families complete enrollment paperwork and pay deposits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requirements" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Admission Requirements</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Required Documents</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Completed application form</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Previous school records (2 years)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Teacher recommendations</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Birth certificate or passport</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Health records and immunizations</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Recent photograph</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Academic Requirements</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Satisfactory academic performance</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>English proficiency (for non-native speakers)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Grade-appropriate mathematics skills</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Positive behavioral record</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Demonstrated learning motivation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Additional Requirements</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Parent interview participation</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Student interview</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Entrance assessment completion</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>School visit (recommended)</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Financial responsibility agreement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tuition Section -->
+    <section id="tuition" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Tuition & Fees</h3>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-4 text-blue-900">Primary School</h4>
+                        <div class="text-3xl font-bold text-blue-900 mb-4">€12,000<span class="text-sm font-normal text-gray-600">/year</span></div>
+                        <ul class="space-y-2 text-gray-700 mb-6">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>All core subjects</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Language instruction</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Art and music</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Physical education</li>
+                        </ul>
+                        <a href="#apply" class="block text-center bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-800">Apply Now</a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md border-2 border-blue-900">
+                        <div class="inline-block px-4 py-1 bg-blue-900 text-white text-sm rounded-full mb-4">Most Popular</div>
+                        <h4 class="text-xl font-bold mb-4 text-blue-900">Middle School</h4>
+                        <div class="text-3xl font-bold text-blue-900 mb-4">€14,500<span class="text-sm font-normal text-gray-600">/year</span></div>
+                        <ul class="space-y-2 text-gray-700 mb-6">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Advanced core subjects</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Multiple languages</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Technology integration</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Sports programs</li>
+                        </ul>
+                        <a href="#apply" class="block text-center bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-800">Apply Now</a>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h4 class="text-xl font-bold mb-4 text-blue-900">High School</h4>
+                        <div class="text-3xl font-bold text-blue-900 mb-4">€16,500<span class="text-sm font-normal text-gray-600">/year</span></div>
+                        <ul class="space-y-2 text-gray-700 mb-6">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>IB Diploma Programme</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Advanced placement</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>College counseling</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Extracurricular activities</li>
+                        </ul>
+                        <a href="#apply" class="block text-center bg-blue-900 text-white py-2 px-4 rounded-full hover:bg-blue-800">Apply Now</a>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-8 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Additional Fees</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <ul class="space-y-3 text-gray-700">
+                                <li><i class="fas fa-circle text-blue-900 text-xs mr-2"></i>Registration fee: €500 (one-time)</li>
+                                <li><i class="fas fa-circle text-blue-900 text-xs mr-2"></i>Technology fee: €300/year</li>
+                                <li><i class="fas fa-circle text-blue-900 text-xs mr-2"></i>Materials fee: €250/year</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="space-y-3 text-gray-700">
+                                <li><i class="fas fa-circle text-blue-900 text-xs mr-2"></i>Field trips: Varies by grade</li>
+                                <li><i class="fas fa-circle text-blue-900 text-xs mr-2"></i>Uniforms: €200-400</li>
+                                <li><i class="fas fa-circle text-blue-900 text-xs mr-2"></i>Bus service: Optional, €1,200/year</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Aid Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Financial Aid & Scholarships</h3>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold mb-4 text-blue-900">Merit-Based Scholarships</h4>
+                        <p class="text-gray-700 mb-4">We offer merit-based scholarships to students who demonstrate exceptional academic achievement, leadership potential, or special talents.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Academic Excellence Awards</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Leadership Scholarships</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Arts & Athletics Scholarships</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="text-xl font-bold mb-4 text-blue-900">Need-Based Financial Aid</h4>
+                        <p class="text-gray-700 mb-4">Financial aid is available to families who demonstrate financial need through our application process.</p>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Income-based assessment</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Sibling discounts available</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Payment plans offered</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section id="apply" class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Begin Your Journey?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Take the first step towards providing your child with an exceptional international education experience.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="online-application.html" class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-8 rounded-full">Start Application</a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-3 px-8 rounded-full">Contact Admissions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> ul. Harmonijna 1, 00-000 Warszawa</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-2"></i> +48 42 667 0825</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> server@ali.edu.pl</p>
+                        <p><i class="fas fa-globe mr-2"></i> www.ali.edu.pl</p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-300">About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-blue-300">Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-blue-300">Admissions</a></li>
+                        <li><a href="calendar.html" class="hover:text-blue-300">School Calendar</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">For Parents</h3>
+                    <ul class="space-y-2">
+                        <li><a href="parent-portal.html" class="hover:text-blue-300">Parent Portal</a></li>
+                        <li><a href="resources.html" class="hover:text-blue-300">Resources</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-300">FAQ</a></li>
+                        <li><a href="handbook.html" class="hover:text-blue-300">Student Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <form>
+                        <label class="block mb-2">Subscribe to our newsletter:</label>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-900">
+                            <button type="submit" class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Academia Linguarum Internationalis. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a> | 
+                    <a href="sitemap.html" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

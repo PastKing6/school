@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life | Academia Linguarum Internationalis</title>
+    <meta name="description" content="Experience the vibrant student life at Academia Linguarum Internationalis. Discover our extracurricular activities, clubs, sports, and community events.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/ali-logo.png" alt="ALI Logo" class="h-16 mr-3" onerror="this.src='https://via.placeholder.com/150x60?text=ALI';this.onerror='';">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900">Academia Linguarum Internationalis</h1>
+                    <p class="text-sm text-gray-600">Excellence in International Education</p>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-blue-900 text-2xl"></i>
+            </button>
+            
+            <!-- Navigation - Desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-blue-900 font-medium hover:text-blue-700">Home</a></li>
+                    <li><a href="about.html" class="text-blue-900 font-medium hover:text-blue-700">About Us</a></li>
+                    <li><a href="academics.html" class="text-blue-900 font-medium hover:text-blue-700">Academics</a></li>
+                    <li><a href="admissions.html" class="text-blue-900 font-medium hover:text-blue-700">Admissions</a></li>
+                    <li><a href="student-life.html" class="text-blue-900 font-medium hover:text-blue-700 border-b-2 border-blue-700">Student Life</a></li>
+                    <li><a href="contact.html" class="text-blue-900 font-medium hover:text-blue-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="hidden bg-blue-50 md:hidden" id="mobile-menu">
+            <ul class="container mx-auto px-4 py-3 space-y-3">
+                <li><a href="index.html" class="block text-blue-900 font-medium">Home</a></li>
+                <li><a href="about.html" class="block text-blue-900 font-medium">About Us</a></li>
+                <li><a href="academics.html" class="block text-blue-900 font-medium">Academics</a></li>
+                <li><a href="admissions.html" class="block text-blue-900 font-medium">Admissions</a></li>
+                <li><a href="student-life.html" class="block text-blue-900 font-medium">Student Life</a></li>
+                <li><a href="contact.html" class="block text-blue-900 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-20">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Student Life</h2>
+            <p class="text-xl max-w-3xl">Discover a vibrant community where learning extends beyond the classroom through diverse activities and enriching experiences.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <span class="mx-2"><i class="fas fa-chevron-right text-xs"></i></span>
+                <span class="text-gray-800">Student Life</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Student Clubs</h3>
+                    <p class="text-gray-700">Join diverse clubs and organizations that match your interests and passions.</p>
+                </div>
+
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Sports</h3>
+                    <p class="text-gray-700">Participate in competitive sports and physical activities for all skill levels.</p>
+                </div>
+
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Arts & Culture</h3>
+                    <p class="text-gray-700">Express yourself through music, theater, visual arts, and cultural events.</p>
+                </div>
+
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Community Service</h3>
+                    <p class="text-gray-700">Make a difference through volunteer work and community engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs and Organizations -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Clubs & Organizations</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Academic Clubs -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://miro.medium.com/v2/resize:fit:1000/1*5I2d9j0vfhRN7YiEAU3MUA.jpeg" alt="Academic Clubs" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-3 text-blue-900">Academic Clubs</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Debate Club</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Science Society</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Math Olympiad Team</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Model United Nations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cultural Clubs -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://flathatnews.com/wp-content/uploads/2017/08/LASU.jpg" alt="Cultural Clubs" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-3 text-blue-900">Cultural Clubs</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>International Club</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Language Exchange</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Cooking Club</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Cultural Festival Committee</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Arts Clubs -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWzLeFhaI_T12WzuvRiw8EB0ag9-CrUQb3qw&s" alt="Arts Clubs" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-3 text-blue-900">Arts Clubs</h4>
+                        <ul class="space-y-2 text-gray-700">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Drama Club</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>School Band</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Art Studio</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Photography Club</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Programs -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Sports Programs</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <img src="https://www.armymwr.com/application/files/9515/0429/8255/cys-youthsports-thumb.jpg" alt="Sports Programs" class="rounded-lg shadow-md w-full mb-6">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Competitive Sports</h4>
+                    <div class="grid grid-cols-2 gap-4 text-gray-700">
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Soccer</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Basketball</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Volleyball</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Swimming</li>
+                        </ul>
+                        <ul class="space-y-2">
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Tennis</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Track & Field</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Badminton</li>
+                            <li><i class="fas fa-check text-green-600 mr-2"></i>Table Tennis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc__KlvZbVrDd_KlmaY3a5DRkzldgOeEfbOA&s" alt="Recreational Activities" class="rounded-lg shadow-md w-full mb-6">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Recreational Activities</h4>
+                    <p class="text-gray-700 mb-4">Our recreational sports program offers students opportunities to stay active and have fun in a less competitive environment.</p>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Intramural Sports Leagues</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Fitness Classes</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Yoga and Meditation</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Dance Classes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Events -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Annual Events & Traditions</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-3xl mb-4">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3 text-blue-900">International Day</h4>
+                    <p class="text-gray-700">Celebrate our diverse community with cultural performances, food, and exhibitions.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-3xl mb-4">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3 text-blue-900">Arts Festival</h4>
+                    <p class="text-gray-700">Annual showcase of student artwork, performances, and creative achievements.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-3xl mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3 text-blue-900">Sports Day</h4>
+                    <p class="text-gray-700">A day of athletic competition, team spirit, and community building.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-3xl mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4 class="text-lg font-bold mb-3 text-blue-900">Graduation Ceremony</h4>
+                    <p class="text-gray-700">Celebrating our graduating students' achievements and future endeavors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Support -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-12 text-blue-900">Student Support Services</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Counseling Services</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Academic Guidance</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Personal Counseling</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Career Planning</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>University Applications</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Health & Wellness</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>School Nurse</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Mental Health Support</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Nutrition Guidance</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>First Aid Services</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-blue-50 rounded-lg">
+                    <h4 class="text-xl font-bold mb-4 text-blue-900">Student Services</h4>
+                    <ul class="space-y-3 text-gray-700">
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Library Resources</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Technology Support</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Study Areas</li>
+                        <li><i class="fas fa-check text-green-600 mr-2"></i>Transportation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Experience Student Life at ALI</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join our vibrant community and discover the endless opportunities for growth and engagement.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="admissions.html" class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-8 rounded-full">Apply Now</a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-3 px-8 rounded-full">Schedule a Visit</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> ul. Harmonijna 1, 00-000 Warszawa</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-2"></i> +48 42 667 0825</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> server@ali.edu.pl</p>
+                        <p><i class="fas fa-globe mr-2"></i> www.ali.edu.pl</p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-300">About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-blue-300">Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-blue-300">Admissions</a></li>
+                        <li><a href="calendar.html" class="hover:text-blue-300">School Calendar</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">For Parents</h3>
+                    <ul class="space-y-2">
+                        <li><a href="parent-portal.html" class="hover:text-blue-300">Parent Portal</a></li>
+                        <li><a href="resources.html" class="hover:text-blue-300">Resources</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-300">FAQ</a></li>
+                        <li><a href="handbook.html" class="hover:text-blue-300">Student Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <form>
+                        <label class="block mb-2">Subscribe to our newsletter:</label>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-900">
+                            <button type="submit" class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Academia Linguarum Internationalis. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a> | 
+                    <a href="sitemap.html" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

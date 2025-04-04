@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Academia Linguarum Internationalis</title>
+    <meta name="description" content="Get in touch with Academia Linguarum Internationalis. Find our contact information, location, and ways to connect with our team.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/ali-logo.png" alt="ALI Logo" class="h-16 mr-3" onerror="this.src='https://via.placeholder.com/150x60?text=ALI';this.onerror='';">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900">Academia Linguarum Internationalis</h1>
+                    <p class="text-sm text-gray-600">Excellence in International Education</p>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-blue-900 text-2xl"></i>
+            </button>
+            
+            <!-- Navigation - Desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-blue-900 font-medium hover:text-blue-700">Home</a></li>
+                    <li><a href="about.html" class="text-blue-900 font-medium hover:text-blue-700">About Us</a></li>
+                    <li><a href="academics.html" class="text-blue-900 font-medium hover:text-blue-700">Academics</a></li>
+                    <li><a href="admissions.html" class="text-blue-900 font-medium hover:text-blue-700">Admissions</a></li>
+                    <li><a href="student-life.html" class="text-blue-900 font-medium hover:text-blue-700">Student Life</a></li>
+                    <li><a href="contact.html" class="text-blue-900 font-medium hover:text-blue-700 border-b-2 border-blue-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="hidden bg-blue-50 md:hidden" id="mobile-menu">
+            <ul class="container mx-auto px-4 py-3 space-y-3">
+                <li><a href="index.html" class="block text-blue-900 font-medium">Home</a></li>
+                <li><a href="about.html" class="block text-blue-900 font-medium">About Us</a></li>
+                <li><a href="academics.html" class="block text-blue-900 font-medium">Academics</a></li>
+                <li><a href="admissions.html" class="block text-blue-900 font-medium">Admissions</a></li>
+                <li><a href="student-life.html" class="block text-blue-900 font-medium">Student Life</a></li>
+                <li><a href="contact.html" class="block text-blue-900 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-20">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4">Contact Us</h2>
+            <p class="text-xl max-w-3xl">We're here to help. Get in touch with us and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-100 py-2">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center text-sm text-gray-600">
+                <a href="index.html" class="hover:text-blue-700">Home</a>
+                <span class="mx-2"><i class="fas fa-chevron-right text-xs"></i></span>
+                <span class="text-gray-800">Contact</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-900">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="first_name">First Name *</label>
+                                <input type="text" id="first_name" name="first_name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2" for="last_name">Last Name *</label>
+                                <input type="text" id="last_name" name="last_name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="subject">Subject *</label>
+                            <select id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                                <option value="">Please select...</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="program">Program Information</option>
+                                <option value="visit">Schedule a Visit</option>
+                                <option value="employment">Employment</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2" for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-900 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-900">Get in Touch</h3>
+                    
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-lg font-bold mb-3 text-blue-900">Address</h4>
+                            <p class="text-gray-700 flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-900"></i>
+                                ul. Harmonijna 1<br>
+                                00-000 Warszawa<br>
+                                Poland
+                            </p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-bold mb-3 text-blue-900">Contact Details</h4>
+                            <div class="space-y-3">
+                                <p class="text-gray-700 flex items-center">
+                                    <i class="fas fa-phone mr-3 text-blue-900"></i>
+                                    +48 42 667 0825
+                                </p>
+                                <p class="text-gray-700 flex items-center">
+                                    <i class="fas fa-envelope mr-3 text-blue-900"></i>
+                                    server@ali.edu.pl
+                                </p>
+                                <p class="text-gray-700 flex items-center">
+                                    <i class="fas fa-globe mr-3 text-blue-900"></i>
+                                    www.ali.edu.pl
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-bold mb-3 text-blue-900">Office Hours</h4>
+                            <div class="space-y-2 text-gray-700">
+                                <p>Monday - Friday: 8:00 AM - 4:30 PM</p>
+                                <p>Saturday: 9:00 AM - 1:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <h4 class="text-lg font-bold mb-3 text-blue-900">Connect With Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-blue-900 text-white h-10 w-10 rounded-full flex items-center justify-center hover:bg-blue-800">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-blue-900 text-white h-10 w-10 rounded-full flex items-center justify-center hover:bg-blue-800">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="bg-blue-900 text-white h-10 w-10 rounded-full flex items-center justify-center hover:bg-blue-800">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-blue-900 text-white h-10 w-10 rounded-full flex items-center justify-center hover:bg-blue-800">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-8 text-blue-900 text-center">Our Location</h3>
+            <div class="aspect-w-16 aspect-h-9">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.7972220211837!2d21.0122!3d52.2297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDEzJzQ3LjAiTiAyMcKwMDAnNDQuMCJF!5e0!3m2!1sen!2spl!4v1625764428846!5m2!1sen!2spl" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    class="rounded-lg shadow-md">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-8 text-blue-900 text-center">Frequently Asked Questions</h3>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h4 class="text-lg font-bold mb-3 text-blue-900">What are your admission requirements?</h4>
+                    <p class="text-gray-700">Please visit our Admissions page for detailed information about our admission process, requirements, and deadlines.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h4 class="text-lg font-bold mb-3 text-blue-900">How can I schedule a campus visit?</h4>
+                    <p class="text-gray-700">You can schedule a campus visit by filling out the contact form above or calling our office directly. We offer both individual tours and open house events throughout the year.</p>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg p-6">
+                    <h4 class="text-lg font-bold mb-3 text-blue-900">What transportation options are available?</h4>
+                    <p class="text-gray-700">We provide school bus services covering various areas of Warsaw. Contact our transportation office for specific route information and schedules.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> ul. Harmonijna 1, 00-000 Warszawa</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-2"></i> +48 42 667 0825</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> server@ali.edu.pl</p>
+                        <p><i class="fas fa-globe mr-2"></i> www.ali.edu.pl</p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-300">About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-blue-300">Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-blue-300">Admissions</a></li>
+                        <li><a href="calendar.html" class="hover:text-blue-300">School Calendar</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">For Parents</h3>
+                    <ul class="space-y-2">
+                        <li><a href="parent-portal.html" class="hover:text-blue-300">Parent Portal</a></li>
+                        <li><a href="resources.html" class="hover:text-blue-300">Resources</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-300">FAQ</a></li>
+                        <li><a href="handbook.html" class="hover:text-blue-300">Student Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <form>
+                        <label class="block mb-2">Subscribe to our newsletter:</label>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-900">
+                            <button type="submit" class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Academia Linguarum Internationalis. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a> | 
+                    <a href="sitemap.html" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
