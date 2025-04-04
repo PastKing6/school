@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Program | Academia Linguarum Internationalis</title>
+    <meta name="description" content="Explore our comprehensive Computer Science program at Academia Linguarum Internationalis in Warsaw, Poland. Prepare for university and future careers in technology.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/ali-logo.png" alt="ALI Logo" class="h-16 mr-3" onerror="this.src='https://via.placeholder.com/150x60?text=ALI';this.onerror='';">
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold text-blue-900">Academia Linguarum Internationalis</h1>
+                    <p class="text-sm text-gray-600">Excellence in International Education</p>
+                </div>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-blue-900 text-2xl"></i>
+            </button>
+            
+            <!-- Navigation - Desktop -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="text-blue-900 font-medium hover:text-blue-700">Home</a></li>
+                    <li><a href="about.html" class="text-blue-900 font-medium hover:text-blue-700">About Us</a></li>
+                    <li><a href="academics.html" class="text-blue-900 font-medium hover:text-blue-700 border-b-2 border-blue-700">Academics</a></li>
+                    <li><a href="admissions.html" class="text-blue-900 font-medium hover:text-blue-700">Admissions</a></li>
+                    <li><a href="student-life.html" class="text-blue-900 font-medium hover:text-blue-700">Student Life</a></li>
+                    <li><a href="contact.html" class="text-blue-900 font-medium hover:text-blue-700">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <nav class="hidden bg-blue-50 md:hidden" id="mobile-menu">
+            <ul class="container mx-auto px-4 py-3 space-y-3">
+                <li><a href="index.html" class="block text-blue-900 font-medium">Home</a></li>
+                <li><a href="about.html" class="block text-blue-900 font-medium">About Us</a></li>
+                <li><a href="academics.html" class="block text-blue-900 font-medium">Academics</a></li>
+                <li><a href="admissions.html" class="block text-blue-900 font-medium">Admissions</a></li>
+                <li><a href="student-life.html" class="block text-blue-900 font-medium">Student Life</a></li>
+                <li><a href="contact.html" class="block text-blue-900 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-900 text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="max-w-4xl">
+                <h1 class="text-3xl md:text-5xl font-bold mb-6">Computer Science Program</h1>
+                <p class="text-xl md:text-2xl mb-8">Preparing students for the digital future with a comprehensive and innovative Computer Science curriculum.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#curriculum" class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-2 px-6 rounded-full">Explore Curriculum</a>
+                    <a href="admissions.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-2 px-6 rounded-full">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-900">Program Overview</h2>
+                    <p class="text-gray-700 mb-4">The Computer Science program at Academia Linguarum Internationalis provides students with a strong foundation in computational thinking, programming, and digital literacy. Our curriculum is designed to prepare students for university-level studies in computer science and related fields, as well as for careers in the rapidly evolving technology sector.</p>
+                    <p class="text-gray-700 mb-4">Through a combination of theoretical knowledge and practical application, students develop the skills needed to understand and create technology solutions for real-world problems. Our approach emphasizes both technical proficiency and ethical considerations in the digital age.</p>
+                    <p class="text-gray-700">The program is available to students in our Middle Years Program (MYP) and Diploma Program (DP), with age-appropriate content and complexity at each level.</p>
+                </div>
+                <div class="md:w-1/3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_zavJgqFPDNvDuq_Oz5id7C-UdGovvEQopQ&s" alt="Computer Science Class" class="rounded-lg shadow-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Key Program Features</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Hands-on Coding</h3>
+                    <p class="text-gray-700">Students learn multiple programming languages including Python, Java, and JavaScript through practical, project-based assignments.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Computational Thinking</h3>
+                    <p class="text-gray-700">Develop problem-solving skills through algorithmic thinking, abstraction, pattern recognition, and decomposition.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Emerging Technologies</h3>
+                    <p class="text-gray-700">Explore cutting-edge fields including artificial intelligence, machine learning, and robotics through specialized modules.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Collaborative Projects</h3>
+                    <p class="text-gray-700">Work in teams to design, develop, and deploy software solutions, mirroring real-world development environments.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Digital Ethics</h3>
+                    <p class="text-gray-700">Understand the ethical implications of technology, including privacy, security, and social impact considerations.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="text-blue-900 text-4xl mb-4">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-900">Industry Connections</h3>
+                    <p class="text-gray-700">Benefit from guest lectures, field trips, and internship opportunities with leading technology companies in Poland and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section id="curriculum" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Curriculum</h2>
+            
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-4 text-blue-900">Middle Years Program (Ages 11-16)</h3>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-blue-900">Foundational Skills</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Introduction to computational thinking</li>
+                                <li>Basic programming concepts with Scratch and Python</li>
+                                <li>Web development fundamentals (HTML, CSS)</li>
+                                <li>Digital literacy and online safety</li>
+                                <li>Basic data structures and algorithms</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-blue-900">Projects & Activities</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Creating interactive games and animations</li>
+                                <li>Building personal websites</li>
+                                <li>Robotics club with LEGO Mindstorms</li>
+                                <li>Participation in regional coding competitions</li>
+                                <li>Digital media creation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-blue-900">Diploma Program (Ages 16-19)</h3>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-blue-900">Advanced Topics</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Object-oriented programming with Java</li>
+                                <li>Data structures and advanced algorithms</li>
+                                <li>Database design and SQL</li>
+                                <li>Computer systems and architecture</li>
+                                <li>Software development lifecycle</li>
+                                <li>Network principles and cybersecurity</li>
+                                <li>Introduction to AI and machine learning</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2 text-blue-900">Projects & Activities</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Capstone software development project</li>
+                                <li>Mobile app development</li>
+                                <li>Hackathons and coding competitions</li>
+                                <li>Research projects in emerging technologies</li>
+                                <li>Internship opportunities with tech companies</li>
+                                <li>Mentorship program with industry professionals</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Pathways -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">University and Career Pathways</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">University Preparation</h3>
+                    <p class="text-gray-700 mb-4">Our Computer Science program prepares students for admission to top universities worldwide. Graduates have been accepted to prestigious institutions including:</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Massachusetts Institute of Technology (MIT)</li>
+                        <li>Stanford University</li>
+                        <li>ETH Zurich</li>
+                        <li>University of Oxford</li>
+                        <li>Technical University of Warsaw</li>
+                        <li>Jagiellonian University</li>
+                        <li>And many other leading institutions</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-4 text-blue-900">Career Opportunities</h3>
+                    <p class="text-gray-700 mb-4">The skills developed in our program prepare students for diverse career paths in the technology sector, including:</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>Software Development</li>
+                        <li>Data Science and Analytics</li>
+                        <li>Cybersecurity</li>
+                        <li>Artificial Intelligence Research</li>
+                        <li>Game Development</li>
+                        <li>Web and Mobile App Development</li>
+                        <li>IT Consulting</li>
+                        <li>Technology Entrepreneurship</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Meet Our Faculty</h2>
+            
+            <div class="gricols-3 gap-8">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUHcmdvW7kUXYsmU5Wy_MCvYJjqbhmySt0Kw&s" alt="Dr. Marek Nowak" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-1 text-blue-900">Dr. Marek Nowak</h3>
+                    <p class="text-blue-700 mb-3">Program Director</p>
+                    <p class="text-gray-700 mb-3">Ph.D. in Computer Science from ETH Zurich with 15 years of industry experience at Google and Microsoft.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Profile →</a>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPtN7PNtA7IDqSdbrw_BJdZAIOnEX0AIPrwA&s" alt="Dr. Anna Kowalska" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-1 text-blue-900">Dr. Anna Kowalska</h3>
+                    <p class="text-blue-700 mb-3">AI & Machine Learning Specialist</p>
+                    <p class="text-gray-700 mb-3">Former researcher at DeepMind with expertise in neural networks and computer vision applications.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Profile →</a>
+                </div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPG-BHG2FrS_rglM42Xd1aygpBzqez42b4UQ&s" alt="Prof. Jan Wójcik" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                    <h3 class="text-xl font-bold mb-1 text-blue-900">Prof. Jan Wójcik</h3>
+                    <p class="text-blue-700 mb-3">Software Engineering Lead</p>
+                    <p class="text-gray-700 mb-3">Experienced software architect with background in developing enterprise applications and mentoring young developers.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Profile →</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <a href="faculty.html" class="inline-block bg-blue-900 text-white hover:bg-blue-800 font-bold py-2 px-6 rounded-full">View All Faculty</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Student Success Stories</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNB7EOGVv3HAqDyJrxAvfOiwSMpdfLMbBRBw&s" alt="Marta Zieliński" class="w-20 h-20 rounded-full mr-4 object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-blue-900">Marta Zieliński, Class of 2020</h3>
+                            <p class="italic text-blue-700 mb-3">Now studying Computer Science at MIT</p>
+                            <p class="text-gray-700">"The Computer Science program at ALI gave me a strong foundation that made my transition to university seamless. The project-based learning approach taught me not just programming, but how to solve complex problems and work effectively in teams."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start">
+                        <img src="https://vicfirth.com/cdn/shop/articles/tomasz_kowalczyk_profile_35395342-4838-4a75-a182-48648d70a22b.png?v=1683837354" alt="Tomasz Kowalczyk" class="w-20 h-20 rounded-full mr-4 object-cover">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-blue-900">Tomasz Kowalczyk, Class of 2019</h3>
+                            <p class="italic text-blue-700 mb-3">Co-founder of EdTech startup Learnify</p>
+                            <p class="text-gray-700">"The entrepreneurial mindset I developed at ALI was just as valuable as the technical skills. My capstone project evolved into my current startup, which has now secured seed funding and serves thousands of users."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Start Your Journey in Computer Science?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join our innovative program and develop the skills needed for success in the digital age.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="admissions.html" class="bg-white text-blue-900 hover:bg-gray-100 font-bold py-3 px-8 rounded-full">Apply Now</a>
+                <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-bold py-3 px-8 rounded-full">Request Information</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> ul. Harmonijna 1, 00-000 Warszawa</p>
+                        <p class="mb-2"><i class="fas fa-phone mr-2"></i> +48 42 667 0825</p>
+                        <p class="mb-2"><i class="fas fa-envelope mr-2"></i> server@ali.edu.pl</p>
+                        <p><i class="fas fa-globe mr-2"></i> www.ali.edu.pl</p>
+                    </address>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-blue-300">About Us</a></li>
+                        <li><a href="academics.html" class="hover:text-blue-300">Academics</a></li>
+                        <li><a href="admissions.html" class="hover:text-blue-300">Admissions</a></li>
+                        <li><a href="calendar.html" class="hover:text-blue-300">School Calendar</a></li>
+                        <li><a href="careers.html" class="hover:text-blue-300">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">For Parents</h3>
+                    <ul class="space-y-2">
+                        <li><a href="parent-portal.html" class="hover:text-blue-300">Parent Portal</a></li>
+                        <li><a href="resources.html" class="hover:text-blue-300">Resources</a></li>
+                        <li><a href="faq.html" class="hover:text-blue-300">FAQ</a></li>
+                        <li><a href="handbook.html" class="hover:text-blue-300">Student Handbook</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-blue-800 hover:bg-blue-700 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-500 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-700 hover:bg-blue-600 h-10 w-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <form>
+                        <label class="block mb-2">Subscribe to our newsletter:</label>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 w-full rounded-l text-gray-900">
+                            <button type="submit" class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2023 Academia Linguarum Internationalis. All rights reserved.</p>
+                <div class="mt-2">
+                    <a href="privacy.html" class="hover:text-white">Privacy Policy</a> | 
+                    <a href="terms.html" class="hover:text-white">Terms of Use</a> | 
+                    <a href="sitemap.html" class="hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
